@@ -1,13 +1,13 @@
 import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Menu from "./components/Menu";
+import Menu from "./components/Navbar";
 
 function App() {
 	return (
 		<div className="App">
 			<Header />
-			<Menu />
+			<Navbar />
 			<div className="Main">{/* insert stuff here */}</div>
 			<Footer />
 		</div>
