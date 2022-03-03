@@ -1,7 +1,7 @@
 import * as api from "../utils/api";
 import { useState, useEffect } from "react";
-import ItemCard from "./ItemCard";
-import CategoryFilter from "./CategoryFilter";
+import ItemCard from "../components/ItemCard";
+import CategoryFilter from "../components/CategoryButton";
 import { Link, useParams } from "react-router-dom";
 
 const ItemList = () => {
