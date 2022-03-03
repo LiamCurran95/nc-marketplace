@@ -11,10 +11,15 @@ const ItemList = () => {
   useEffect(() => {
     setIsLoading(true);
 
+    // fetching all items
     api.fetchItemAll().then((data) => {
-
       setItems(data);
       setIsLoading(false);
+    });
+
+    // fetching categories
+    api.fetchCategoryAll().then((data) => {
+      setCategories(data);
     });
   }, []);
 
@@ -22,7 +27,11 @@ const ItemList = () => {
 
   return (
     <main className="container">
-      <div className="filter">{}</div>
+      <div className="filter">
+        {categories.map(({ category_name }) => {
+          return <CategoryFilter key={category_name} category_name={category_name} />;
+        })}
+      </div>
       <div className="grid">
         {items.map(({ item_id, item_name, img_url, price, category_name }) => {
           return (

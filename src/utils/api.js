@@ -11,7 +11,7 @@ export function fetchItemAll() {
 }
 
 export function fetchCategoryAll() {
-  return mcAPI.get("/categories").then(({ data: [categories] }) => {
+  return mcAPI.get("/categories").then(({ data: {categories} }) => {
     return categories;
   });
 }
