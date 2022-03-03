@@ -1,9 +1,9 @@
-const Menu = () => {
+const Navbar = () => {
 	return (
-		<nav className="Menu">
-			<h1>Menu</h1>
+		<nav className="Navbar">
+			<h1>Navigation</h1>
 		</nav>
 	);
 };
 
-export default Menu;
+export default Navbar;
