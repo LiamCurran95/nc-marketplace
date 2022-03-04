@@ -31,11 +31,6 @@ button {
   border-radius: 4px;
 }
 
-header {
-  background-color: #111111;
-  color: #ffffff;
-}
-
 /* Grid */
 
 .container {
@@ -82,4 +77,15 @@ header {
 
 .itemCard_info {
   margin: 1rem 0;
+}
+
+/* UserInfo */
+
+.userInfo .avatar {
+  max-width: 60px;
+  margin: 0.5rem 0;
+}
+
+.userInfo .username {
+  display: block;
 }
