@@ -58,7 +58,6 @@ export function postCategory(category_name) {
 }
 
 export function deleteItem(item_id) {
-	return mcAPI.delete(`items/${item_id}`).then((res) => {
-		return res;
-	});
+	console.log(item_id);
+	return mcAPI.delete(`items/${item_id}`);
 }

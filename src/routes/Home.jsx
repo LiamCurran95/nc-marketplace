@@ -28,13 +28,24 @@ const ItemList = () => {
 			<div className="grid">
 				{items.map(({ item_id, item_name, img_url, price, category_name }) => {
 					return (
-						<ItemCard
-							key={item_id}
-							item_name={item_name}
-							img_url={img_url}
-							price={price}
-							category_name={category_name}
-						/>
+						<div className="item-card">
+							<ItemCard
+								key={item_id}
+								item_name={item_name}
+								img_url={img_url}
+								price={price}
+								category_name={category_name}
+							/>
+							<button
+								id={item_id}
+								key={item_id}
+								type="submit"
+								className="removeListing"
+								onClick={() => api.deleteItem(item_id)}
+							>
+								Remove this listing
+							</button>
+						</div>
 					);
 				})}
 			</div>

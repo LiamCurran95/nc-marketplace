@@ -17,7 +17,6 @@ function App() {
 					<Route path="/" element={<Home />} />
 					<Route path="categories/:category_name" element={<Home />} />
 					<Route path="/sellitem" element={<ListItem />} />
-					{/* <Route path="/removelisting" element={<RemoveListing />} /> */}
 				</Routes>
 				<Footer />
 			</div>

@@ -1,4 +1,5 @@
 import * as api from "../utils/api";
+import { useState } from "react";
 
 const ItemCard = ({ item_id, item_name, img_url, price, category_name }) => {
 	return (
@@ -12,13 +13,6 @@ const ItemCard = ({ item_id, item_name, img_url, price, category_name }) => {
 				</p>
 				<p className="category">{category_name}</p>
 				<div className="price">${price}</div>
-				<button
-					onClick={(item_id) => {
-						api.deleteItem(item_id);
-					}}
-				>
-					Remove this listing
-				</button>
 			</div>
 		</article>
 	);
