@@ -5,18 +5,3 @@
   font-size: 1.15rem;
   text-align: center;
 }
-
-.Header {
-  background-color: #111111;
-  color: #ffffff;
-  min-height: 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1rem;
-  margin-bottom: 2rem;
-}
-
-.Header h1 {
-  margin: 0;
-}
